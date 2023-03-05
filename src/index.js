@@ -14,7 +14,7 @@ app.use(express.urlencoded({
 }));
 app.use(authRoutes)
 
-const mongoUri = 'mongodb+srv://admin:passwordx2@cluster0.yebrx.mongodb.net/authapp?retryWrites=true&w=majority'
+const mongoUri = 'mongodb+srv://admin:password@cluster0.yebrx.mongodb.net/authapp?retryWrites=true&w=majority'
 mongoose.connect(mongoUri)
 mongoose.connection.on('connected', ()=>{
     console.log('Mongo DB connected');
